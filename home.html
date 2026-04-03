@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>햇빛병원 — 인증의료기관 산부인과 전문병원</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600&family=Noto+Serif+KR:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/hatvit-storage.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/nav-session.js" defer></script>
+  <script src="js/home.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-backdrop" aria-hidden="true"></div>
+    <div class="site-header__inner">
+      <a class="logo" href="home.html">HATVIT</a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="메뉴 열기">
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+      </button>
+      <nav id="site-nav" class="nav-panel" aria-label="주 메뉴">
+        <ul class="nav-main">
+          <li><a href="home.html" aria-current="page">홈</a></li>
+          <li class="nav-main__group">
+            <span class="nav-submenu__label">병원소개</span>
+            <ul class="nav-submenu" role="list">
+              <li><a href="pages/about.html">병원 소개</a></li>
+              <li><a href="pages/staff.html">의료진 소개</a></li>
+            </ul>
+          </li>
+          <li><a href="pages/obstetrics.html">산과</a></li>
+          <li><a href="pages/gynecology.html">부인과</a></li>
+          <li><a href="pages/pediatrics.html">소아청소년과</a></li>
+          <li><a href="pages/internal.html">내과</a></li>
+          <li><a href="pages/checkup.html">건강검진센터</a></li>
+          <li><a href="pages/culture.html">문화센터</a></li>
+          <li><a href="pages/guide.html">진료안내</a></li>
+          <li class="nav-main__group">
+            <span class="nav-submenu__label">상담</span>
+            <ul class="nav-submenu" role="list">
+              <li><a href="pages/qa.html">Q&amp;A</a></li>
+              <li><a href="pages/board.html">상담게시판</a></li>
+              <li><a href="pages/reservation.html">실시간 예약</a></li>
+            </ul>
+          </li>
+          <li><a href="pages/login.html" id="nav-login-link">로그인</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section
+    class="hero-mega"
+    id="hero-mega"
+    data-expanded="true"
+    aria-label="메인 비주얼"
+  >
+    <div class="hero-mega__bg" aria-hidden="true">
+        <div class="hero-mega__slides">
+        <div class="hero-mega__slide is-active" data-index="0" style="background-image:url('images/home-slide-1.png')"></div>
+        <div class="hero-mega__slide" data-index="1" hidden style="background-image:url('images/home-slide-2.png')"></div>
+        <div class="hero-mega__slide" data-index="2" hidden style="background-image:url('images/home-slide-3.png')"></div>
+        <div class="hero-mega__slide" data-index="3" hidden style="background-image:url('images/home-slide-4.png')"></div>
+        <div class="hero-mega__slide" data-index="4" hidden style="background-image:url('images/home-slide-5.png')"></div>
+      </div>
+      <div class="hero-mega__overlay"></div>
+    </div>
+    <div class="hero-mega__inner">
+      <p class="hero__eyebrow hero-mega__eyebrow">Obstetrics &amp; Gynecology Hospital</p>
+      <h1>자연에서 자연으로<br />인증의료기관 산부인과 전문병원</h1>
+      <p class="hero__lead hero-mega__lead">
+        산모와 아기는 자연입니다. 햇빛병원은 자연주의를 지향하며, 몸과 마음의 안식과 치유를 위한 품격 있는 의료 공간을 지향합니다.
+        서울 동서북부 유일 보건복지부 인증 산부인과 전문병원으로 오직 한 분에게 집중할 수 있는 진료를 약속드립니다.
+      </p>
+      <div class="hero__cta hero-mega__cta">
+        <a class="btn btn--primary" href="pages/guide.html">진료 · 예약 안내</a>
+        <a class="btn btn--ghost hero-mega__btn-ghost" href="pages/about.html">병원 소개</a>
+      </div>
+      <div class="hero-mega__dots" role="tablist" aria-label="비주얼 슬라이드">
+        <button type="button" class="hero-mega__dot is-active" role="tab" aria-selected="true" aria-label="슬라이드 1"></button>
+        <button type="button" class="hero-mega__dot" role="tab" aria-selected="false" aria-label="슬라이드 2"></button>
+        <button type="button" class="hero-mega__dot" role="tab" aria-selected="false" aria-label="슬라이드 3"></button>
+        <button type="button" class="hero-mega__dot" role="tab" aria-selected="false" aria-label="슬라이드 4"></button>
+        <button type="button" class="hero-mega__dot" role="tab" aria-selected="false" aria-label="슬라이드 5"></button>
+      </div>
+    </div>
+    <button
+      type="button"
+      class="hero-mega__expand"
+      id="hero-mega-expand"
+      aria-expanded="true"
+      aria-controls="hero-mega"
+    >
+      <span class="hero-mega__expand-label">배너 접기</span>
+      <span class="hero-mega__expand-icon" aria-hidden="true"></span>
+    </button>
+  </section>
+
+  <section class="quote-band" aria-labelledby="quote-title">
+    <div class="quote-band__inner">
+      <h2 id="quote-title" class="visually-hidden">핵심 메시지</h2>
+      <blockquote>
+        빛나는 가치를, 나를 위한 선택으로.<br />
+        치유의 시간이 머무는 곳에서 삶의 균형을 되찾으시길 바랍니다.
+      </blockquote>
+      <cite>Hatvit · Wellness &amp; Care</cite>
+    </div>
+  </section>
+
+  <section class="section reveal">
+    <div class="wrap">
+      <header class="section__head">
+        <p class="section__label">Clinical Centers</p>
+        <h2>진료 · 클리닉</h2>
+        <p class="section__desc">
+          산부인과를 중심으로 소아청소년과·내과·건강검진이 연계되어 가족의 건강을 함께 돌봅니다.
+        </p>
+        <hr class="divider" />
+      </header>
+      <div class="grid-cards grid-cards--invert" id="clinical-cards-grid">
+        <article class="card">
+          <h3>산과</h3>
+          <p>고위험출산, 자연주의 출산, 여성클리닉, 복강경센터, 불임센터, 산후조리원 연계 등 산모와 태아 중심 진료.</p>
+          <a class="more" href="pages/obstetrics.html">자세히 보기</a>
+        </article>
+        <article class="card">
+          <h3>부인과</h3>
+          <p>내분비·종양·갱년기·부인과 수술·여성건강검진까지 여성 생애주기 전반을 다룹니다.</p>
+          <a class="more" href="pages/gynecology.html">자세히 보기</a>
+        </article>
+        <article class="card">
+          <h3>소아청소년과</h3>
+          <p>신생아 케어, 성장발달, 예방접종, 영유아 건강검진 지정기관으로 소아 진료를 제공합니다.</p>
+          <a class="more" href="pages/pediatrics.html">자세히 보기</a>
+        </article>
+        <article class="card">
+          <h3>내과</h3>
+          <p>당뇨·고혈압·갑상선 등 만성질환, 위·대장 내시경, 초음파, 종합검진을 시행합니다.</p>
+          <a class="more" href="pages/internal.html">자세히 보기</a>
+        </article>
+        <article class="card">
+          <h3>건강검진센터</h3>
+          <p>종합·여성·갱년기·임신전·국민건강보험 공단 검진 등 맞춤 프로그램을 운영합니다.</p>
+          <a class="more" href="pages/checkup.html">자세히 보기</a>
+        </article>
+        <article class="card">
+          <h3>문화센터</h3>
+          <p>태교·행복분만·모유수유·발도르프·임산부 요가·플라워테라피 등 산모 교육 프로그램.</p>
+          <a class="more" href="pages/culture.html">자세히 보기</a>
+        </article>
+      </div>
+
+      <div class="pillar-grid" style="margin-top:48px;" role="list">
+        <div class="pillar-grid__item" role="listitem">
+          <h3>인증 · 품질</h3>
+          <p>보건복지부 인증 산부인과 전문병원, 의료기관 평가 인증 등 공신력 있는 기준으로 시설과 진료를 관리합니다.</p>
+        </div>
+        <div class="pillar-grid__item" role="listitem">
+          <h3>분만 · 회복</h3>
+          <p>자연주의 출산 환경과 가족분만실, 수중출산실 등 선택지를 두고 산모의 의견을 존중하는 분만 문화를 지향합니다.</p>
+        </div>
+        <div class="pillar-grid__item" role="listitem">
+          <h3>검진 · 예방</h3>
+          <p>여성·소아·내과 검진이 한 건물에서 연계되어 임신 전후와 가족 단위 예방 의료를 이어갑니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="wrap split">
+      <div class="split-visual">
+        <img src="images/page-checkup.png" width="800" height="600" alt="차분한 검진 라운지 톤의 실내 공간" loading="lazy" decoding="async" />
+      </div>
+      <div class="split__text">
+        <h3>햇빛병원의 철학</h3>
+        <p style="color:var(--text-muted); margin:0 0 16px;">
+          자연치유를 모토로 친환경 건축과 자연친화 공간을 지향합니다. 자연주의 출산센터, 수중출산실, 가족분만실 등 분만 환경을 갖추었으며,
+          최소 침습 복강경 수술과 정밀 초음파로 여성 건강을 지킵니다.
+        </p>
+        <ul>
+          <li>보건복지부 인증 산부인과 전문병원 (동서북부 유일)</li>
+          <li>의료기관 평가 인증 (4주기)</li>
+          <li>건강보험심사평가원 제왕절개 분만율 평가 우수 병원 이력</li>
+        </ul>
+        <span style="display:inline-flex;flex-wrap:wrap;gap:10px;margin-top:8px;">
+          <a class="btn btn--primary" href="pages/about.html">병원 연혁</a>
+          <a class="btn btn--ghost" href="pages/staff.html" style="border-color:var(--accent);color:var(--text);">의료진 소개</a>
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap editorial">
+      <p>
+        프라이빗한 진료 동선과 충분한 상담 시간을 바탕으로, 임신과 출산, 여성 질환, 소아 성장까지
+        한 건물 안에서 이어지는 케어를 설계했습니다. 응급 분만은 24시간 전문의 상주 체계로 대비합니다.
+      </p>
+      <p>
+        문화센터와 테라스 정원, 카페가 있는 로비는 치료 공간을 넘어 쉼과 교감이 있는 장소가 되도록 구성되었습니다.
+      </p>
+      <hr class="divider" style="margin-top:28px;" />
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="wrap split">
+      <div class="split__text">
+        <h3>가족과 함께하는 공간</h3>
+        <p style="color:var(--text-muted); margin:0 0 16px;">
+          소아청소년과·내과·건강검진센터가 함께 있어 산모뿐 아니라 배우자와 자녀의 건강도 한곳에서 상담할 수 있습니다.
+          분만 전후 교육과 모유수유 지원, 산후 회복 프로그램이 연계됩니다.
+        </p>
+        <ul>
+          <li>소아 예방접종 · 영유아 건강검진 지정기관</li>
+          <li>위·대장 내시경 및 만성질환 내과 진료</li>
+          <li>문화센터 프로그램 예약 및 안내</li>
+        </ul>
+        <a class="btn btn--ghost" href="pages/pediatrics.html" style="border-color:var(--accent); color:var(--text); margin-top:8px;">소아 · 내과 안내</a>
+      </div>
+      <div class="split-visual">
+        <img src="images/page-pediatrics.png" width="800" height="600" alt="밝고 정돈된 소아 진료 공간" loading="lazy" decoding="async" />
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <header class="section__head">
+        <p class="section__label">Quick Menu</p>
+        <h2>산부인과 주요 안내</h2>
+        <p class="section__desc">임신·분만·산후에 이르기까지 단계별로 안내드리는 대표 진료 영역입니다.</p>
+        <hr class="divider" />
+      </header>
+      <div class="grid-cards grid-cards--invert" id="quick-menu-grid">
+        <article class="card"><h3>산부인과</h3><p>일반 산전·산후 관리, 정기 검진.</p><a class="more" href="pages/obstetrics.html">바로가기</a></article>
+        <article class="card"><h3>고위험출산</h3><p>고위험 임신 집중 관리.</p><a class="more" href="pages/obstetrics.html">바로가기</a></article>
+        <article class="card"><h3>자연주의 출산</h3><p>의학적 간섭을 최소화한 출산 준비.</p><a class="more" href="pages/obstetrics.html">바로가기</a></article>
+        <article class="card"><h3>여성클리닉</h3><p>가임기·폐경기 여성 건강.</p><a class="more" href="pages/gynecology.html">바로가기</a></article>
+        <article class="card"><h3>복강경센터</h3><p>근종·내막증 등 최소침습 수술.</p><a class="more" href="pages/gynecology.html">바로가기</a></article>
+        <article class="card"><h3>불임센터</h3><p>난임 상담 및 치료 연계.</p><a class="more" href="pages/obstetrics.html">바로가기</a></article>
+      </div>
+
+      <div class="info-hub" id="info-hub" aria-label="연락·위치 안내">
+        <article class="info-hub__tile info-hub__tile--primary">
+          <div class="info-hub__inner">
+            <span class="info-hub__badge">Contact</span>
+            <h3 class="info-hub__title">예약 · 상담</h3>
+            <div class="info-hub__numbers">
+              <a href="tel:1811-6161" class="info-hub__tel">1811-6161</a>
+              <a href="tel:02-983-7771" class="info-hub__tel info-hub__tel--sub">02-983-7771</a>
+            </div>
+            <button type="button" class="info-hub__copy" data-copy="1811-6161" aria-label="대표번호 1811-6161 복사">번호 복사</button>
+          </div>
+        </article>
+        <article class="info-hub__tile info-hub__tile--emergency">
+          <div class="info-hub__inner">
+            <span class="info-hub__badge info-hub__badge--alert">24H</span>
+            <h3 class="info-hub__title">야간 · 응급</h3>
+            <a href="tel:02-944-1350" class="info-hub__tel">02-944-1350</a>
+            <p class="info-hub__note">분만 24시간 전문의 상주</p>
+          </div>
+        </article>
+        <article class="info-hub__tile info-hub__tile--place">
+          <div class="info-hub__inner">
+            <h3 class="info-hub__title">위치</h3>
+            <p class="info-hub__addr">서울 강북구 도봉로 74</p>
+            <p class="info-hub__note">4호선 미아사거리역 도보</p>
+            <a class="info-hub__map-link" href="https://maps.google.com/?q=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C+%EA%B0%95%EB%B6%81%EA%B5%AC+%EB%8F%84%EB%B4%89%EB%A1%9C+74" target="_blank" rel="noopener">Google 지도</a>
+          </div>
+        </article>
+        <article class="info-hub__tile info-hub__tile--guide">
+          <div class="info-hub__inner">
+            <h3 class="info-hub__title">진료 안내</h3>
+            <p class="info-hub__note">진료시간 · 준비사항 · 비급여</p>
+            <a class="info-hub__cta" href="pages/guide.html">자세히 보기</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap" style="padding-bottom:32px;">
+    <div class="contact-bar">
+      <div>
+        <strong>예약 · 상담</strong> 1811-6161 · 02-983-7771<br />
+        <span style="color:var(--text-muted); font-size:0.9rem;">야간·응급 02-944-1350 (분만 24시간 전문의 상주)</span>
+      </div>
+      <div style="color:var(--text-muted); font-size:0.9rem;">
+        서울특별시 강북구 도봉로 74
+      </div>
+    </div>
+  </div>
+
+  <section class="map-section section section--alt" aria-labelledby="map-heading">
+    <div class="wrap">
+      <header class="section__head" style="margin-bottom:28px;">
+        <p class="section__label">Location</p>
+        <h2 id="map-heading">오시는 길</h2>
+        <p class="section__desc">서울특별시 강북구 도봉로 74 · 지하철 4호선 미아사거리역 1번 출구 도보 약 260m</p>
+        <hr class="divider" />
+      </header>
+      <div class="map-section__frame">
+        <iframe
+          title="햇빛병원 위치 — 서울 강북구 도봉로 74"
+          src="https://maps.google.com/maps?q=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C+%EA%B0%95%EB%B6%81%EA%B5%AC+%EB%8F%84%EB%B4%89%EB%A1%9C+74&amp;hl=ko&amp;z=16&amp;output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <p style="margin:16px 0 0; font-size:0.875rem; color:var(--text-muted); text-align:center;">
+        <a href="https://maps.google.com/?q=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C+%EA%B0%95%EB%B6%81%EA%B5%AC+%EB%8F%84%EB%B4%89%EB%A1%9C+74" target="_blank" rel="noopener">Google 지도에서 크게 보기</a>
+      </p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <div class="site-footer__brand">햇빛병원</div>
+        <p>대표 한현신 | 서울특별시 강북구 도봉로 74<br />사업자등록번호 210-23-55848</p>
+        <p style="margin-top:12px;">산부인과 예약 1811-6161 · 팩스 02-987-7772</p>
+      </div>
+      <div>
+        <strong>진료</strong>
+        <ul style="list-style:none; padding:0; margin:12px 0 0;">
+          <li><a href="pages/obstetrics.html">산과</a></li>
+          <li><a href="pages/gynecology.html">부인과</a></li>
+          <li><a href="pages/pediatrics.html">소아청소년과</a></li>
+          <li><a href="pages/internal.html">내과</a></li>
+        </ul>
+      </div>
+      <div>
+        <strong>안내</strong>
+        <ul style="list-style:none; padding:0; margin:12px 0 0;">
+          <li><a href="pages/checkup.html">건강검진</a></li>
+          <li><a href="pages/culture.html">문화센터</a></li>
+          <li><a href="pages/about.html">병원 소개</a></li>
+          <li><a href="pages/staff.html">의료진 소개</a></li>
+          <li><a href="pages/guide.html">진료안내</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="site-footer__copy">본 사이트는 디자인 레퍼런스용 데모입니다. 공식 정보는 <a href="http://www.hatvit.co.kr" target="_blank" rel="noopener">햇빛병원 공식 홈페이지</a>를 확인하세요.<br />Copyright © Hatvit Hospital style demo. All rights reserved.</p>
+  </footer>
+  <script src="js/config.js"></script>
+  <script src="js/floating-bar.js" defer></script>
+</body>
+</html>

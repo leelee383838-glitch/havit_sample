@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>내과 — 햇빛병원</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600&family=Noto+Serif+KR:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="../js/hatvit-storage.js" defer></script>
+  <script src="../js/main.js" defer></script>
+  <script src="../js/nav-session.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-backdrop" aria-hidden="true"></div>
+    <div class="site-header__inner">
+      <a class="logo" href="../home.html">HATVIT</a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="메뉴 열기">
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+      </button>
+      <nav id="site-nav" class="nav-panel" aria-label="주 메뉴">
+        <ul class="nav-main">
+          <li><a href="../home.html">홈</a></li>
+          <li class="nav-main__group">
+            <span class="nav-submenu__label">병원소개</span>
+            <ul class="nav-submenu" role="list">
+              <li><a href="about.html">병원 소개</a></li>
+              <li><a href="staff.html">의료진 소개</a></li>
+            </ul>
+          </li>
+<li><a href="obstetrics.html">산과</a></li>
+          <li><a href="gynecology.html">부인과</a></li>
+          <li><a href="pediatrics.html">소아청소년과</a></li>
+          <li><a href="internal.html" aria-current="page">내과</a></li>
+          <li><a href="checkup.html">건강검진센터</a></li>
+          <li><a href="culture.html">문화센터</a></li>
+          <li><a href="guide.html">진료안내</a></li>
+          <li class="nav-main__group">
+            <span class="nav-submenu__label">상담</span>
+            <ul class="nav-submenu" role="list">
+              <li><a href="qa.html">Q&amp;A</a></li>
+              <li><a href="board.html">상담게시판</a></li>
+              <li><a href="reservation.html">실시간 예약</a></li>
+            </ul>
+          </li>
+          <li><a href="login.html" id="nav-login-link">로그인</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-hero">
+    <h1>내과</h1>
+    <p>자연치유 햇빛병원의 모토 아래 만성질환·소화기·초음파·내시경·종합검진을 제공합니다.</p>
+  </div>
+
+  <figure class="page-banner wrap">
+    <img src="../images/page-internal.png" width="1200" height="675" alt="정돈된 내시경센터 복도" loading="lazy" decoding="async" />
+  </figure>
+
+  <article class="article">
+    <div class="wrap">
+      <nav class="page-toc" aria-label="내과 주요 항목">
+        <p class="page-toc__title">주요 항목</p>
+        <div class="page-toc__grid">
+          <a href="#metabolic">내분비 · 순환기</a>
+          <a href="#digestive">소화기 내과</a>
+          <a href="#endoscopy">내시경 센터</a>
+          <a href="#ultrasound">초음파 센터</a>
+          <a href="#hours">진료 시간</a>
+        </div>
+      </nav>
+
+      <h2 id="metabolic">내분비 · 순환기</h2>
+      <h3>당뇨병</h3>
+      <p>공복혈당, 당화혈색소, 표준 포도당 부하검사 등으로 진단합니다. 식이·운동과 함께 경구약 또는 인슐린으로 조절 목표를 설정합니다.</p>
+      <h3>고혈압</h3>
+      <p>무증상인 경우가 많아 정기 측정이 중요합니다. 생활습관과 약물로 목표 혈압 유지를 돕습니다.</p>
+      <h3>고지혈증 · 대사증후군</h3>
+      <p>LDL·HDL·중성지방 목표는 위험도에 따라 개인화됩니다. 복부비만과 함께 여러 대사 이상이 있으면 대사증후군으로 관리합니다.</p>
+      <h3>갑상선</h3>
+      <p>기능저하·항진·결절은 혈액검사와 초음파, 필요 시 세침으로 평가합니다.</p>
+
+      <h2 id="digestive">소화기 내과</h2>
+      <p>위염·위궤양·역류성 식도염·과민성 장증후군·만성 간염·대장 용종·간담도 질환 등에 대해 약물치료와 내시경 검사·시술을 시행합니다.</p>
+
+      <h2 id="endoscopy">내시경 센터</h2>
+      <ul>
+        <li>위내시경 — 식도·위·십이지장, 조직검사, 용종 절제</li>
+        <li>대장내시경 — 용종 절제, 대장암 선별</li>
+        <li>수면 내시경 — 진정 하 검사 옵션</li>
+      </ul>
+
+      <h2 id="ultrasound">초음파 센터</h2>
+      <p>갑상선·복부·경동맥 초음파 등 비침습적 영상 검사로 동맥경화·간·담도 이상 등을 보조 진단합니다.</p>
+
+      <figure class="article-figure" style="margin:32px 0;">
+        <img src="../images/page-internal.png" width="900" height="520" alt="내과·검사 동선" loading="lazy" decoding="async" style="object-position: center 55%;" />
+      </figure>
+
+      <h2 id="hours">진료 시간 안내 (요약)</h2>
+      <p>내과는 요일별 진료 시간이 상이합니다. 자세한 시간은 <a href="guide.html">진료안내</a>를 확인하거나 02-944-1400으로 문의하세요.</p>
+
+      <div class="contact-bar">
+        <div><strong>내과</strong> 02-944-1400</div>
+        <div><a href="checkup.html">종합검진</a></div>
+      </div>
+    </div>
+  </article>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div><div class="site-footer__brand">햇빛병원</div><p>내과</p></div>
+      <div><ul style="list-style:none;padding:0;"><li><a href="checkup.html">검진</a></li><li><a href="../home.html">홈</a></li></ul></div>
+      <div><ul style="list-style:none;padding:0;"><li><a href="guide.html">진료안내</a></li></ul></div>
+    </div>
+    <p class="site-footer__copy">© Hatvit style demo</p>
+  </footer>
+  <script src="../js/config.js"></script>
+  <script src="../js/floating-bar.js" defer></script>
+</body>
+</html>

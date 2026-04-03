@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>상담게시판 — 햇빛병원</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600&family=Noto+Serif+KR:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="../js/hatvit-storage.js" defer></script>
+  <script src="../js/main.js" defer></script>
+  <script src="../js/nav-session.js" defer></script>
+  <script src="../js/board-view.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-backdrop" aria-hidden="true"></div>
+    <div class="site-header__inner">
+      <a class="logo" href="../home.html">HATVIT</a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="메뉴 열기">
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+      </button>
+      <nav id="site-nav" class="nav-panel" aria-label="주 메뉴">
+        <ul class="nav-main">
+          <li><a href="../home.html">홈</a></li>
+          <li class="nav-main__group">
+            <span class="nav-submenu__label">병원소개</span>
+            <ul class="nav-submenu" role="list">
+              <li><a href="about.html">병원 소개</a></li>
+              <li><a href="staff.html">의료진 소개</a></li>
+            </ul>
+          </li>
+<li><a href="obstetrics.html">산과</a></li>
+          <li><a href="gynecology.html">부인과</a></li>
+          <li><a href="pediatrics.html">소아청소년과</a></li>
+          <li><a href="internal.html">내과</a></li>
+          <li><a href="checkup.html">건강검진센터</a></li>
+          <li><a href="culture.html">문화센터</a></li>
+          <li><a href="guide.html">진료안내</a></li>
+          <li class="nav-main__group">
+            <span class="nav-submenu__label">상담</span>
+            <ul class="nav-submenu" role="list">
+              <li><a href="qa.html">Q&amp;A</a></li>
+              <li><a href="board.html" aria-current="page">상담게시판</a></li>
+              <li><a href="reservation.html">실시간 예약</a></li>
+            </ul>
+          </li>
+          <li><a href="login.html" id="nav-login-link">로그인</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <article class="article">
+    <div class="wrap">
+      <p><a href="board.html">← 목록</a></p>
+      <div id="board-view-root" class="board-view"></div>
+      <p class="board-view__actions"><a class="btn btn--ghost" href="board.html">목록으로</a> <a class="btn btn--primary" href="board-write.html">새 글쓰기</a></p>
+    </div>
+  </article>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div><div class="site-footer__brand">햇빛병원</div><p>상담게시판</p></div>
+      <div><ul style="list-style:none;padding:0;"><li><a href="board.html">목록</a></li><li><a href="../home.html">홈</a></li></ul></div>
+      <div><ul style="list-style:none;padding:0;"><li><a href="guide.html">진료안내</a></li></ul></div>
+    </div>
+    <p class="site-footer__copy">© Hatvit style demo</p>
+  </footer>
+  <script src="../js/config.js"></script>
+  <script src="../js/floating-bar.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>로그인 — 햇빛병원</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600&family=Noto+Serif+KR:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="../js/config.js"></script>
+  <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+  <script src="../js/hatvit-storage.js" defer></script>
+  <script src="../js/main.js" defer></script>
+  <script src="../js/nav-session.js" defer></script>
+  <script src="../js/kakao-auth.js" defer></script>
+  <script src="../js/auth-login.js" defer></script>
+</head>
+<body class="page-login">
+  <header class="site-header">
+    <div class="nav-backdrop" aria-hidden="true"></div>
+    <div class="site-header__inner">
+      <a class="logo" href="../home.html">HATVIT</a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="메뉴 열기">
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+      </button>
+      <nav id="site-nav" class="nav-panel" aria-label="주 메뉴">
+        <ul class="nav-main">
+          <li><a href="../home.html">홈</a></li>
+          <li class="nav-main__group">
+            <span class="nav-submenu__label">병원소개</span>
+            <ul class="nav-submenu" role="list">
+              <li><a href="about.html">병원 소개</a></li>
+              <li><a href="staff.html">의료진 소개</a></li>
+            </ul>
+          </li>
+<li><a href="obstetrics.html">산과</a></li>
+          <li><a href="gynecology.html">부인과</a></li>
+          <li><a href="pediatrics.html">소아청소년과</a></li>
+          <li><a href="internal.html">내과</a></li>
+          <li><a href="checkup.html">건강검진센터</a></li>
+          <li><a href="culture.html">문화센터</a></li>
+          <li><a href="guide.html">진료안내</a></li>
+          <li class="nav-main__group">
+            <span class="nav-submenu__label">상담</span>
+            <ul class="nav-submenu" role="list">
+              <li><a href="qa.html">Q&amp;A</a></li>
+              <li><a href="board.html">상담게시판</a></li>
+              <li><a href="reservation.html">실시간 예약</a></li>
+            </ul>
+          </li>
+          <li><a href="login.html" id="nav-login-link" aria-current="page">로그인</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="login-main">
+    <div class="login-card">
+      <h1 class="login-card__title">로그인</h1>
+      <form id="login-form" class="login-card__form">
+        <div class="form-stack form-stack--login">
+          <div>
+            <label class="form-label form-label--login" for="login-userid">아이디</label>
+            <input class="form-input form-input--login" type="text" id="login-userid" name="userid" required autocomplete="username" />
+          </div>
+          <div>
+            <label class="form-label form-label--login" for="login-password">비밀번호</label>
+            <input class="form-input form-input--login" type="password" id="login-password" name="password" required autocomplete="current-password" />
+          </div>
+          <div class="login-card__row">
+            <button type="submit" class="btn btn--primary btn--login">로그인</button>
+            <a class="btn btn--ghost btn--login" href="register.html">가입</a>
+          </div>
+          <div class="login-card__kakao">
+            <p class="form-hint form-hint--login" id="kakao-key-hint"></p>
+            <button type="button" class="btn btn--kakao btn--login-kakao" id="kakao-login-btn">카카오</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer site-footer--login">
+    <div class="footer-grid">
+      <div><div class="site-footer__brand">햇빛병원</div><p>로그인</p></div>
+      <div><ul style="list-style:none;padding:0;"><li><a href="board.html">상담게시판</a></li><li><a href="../home.html">홈</a></li></ul></div>
+      <div><ul style="list-style:none;padding:0;"><li><a href="guide.html">진료안내</a></li></ul></div>
+    </div>
+    <p class="site-footer__copy">© Hatvit style demo</p>
+  </footer>
+  <script src="../js/floating-bar.js" defer></script>
+</body>
+</html>

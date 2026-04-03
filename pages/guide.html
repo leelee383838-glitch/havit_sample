@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>진료안내 — 햇빛병원</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600&family=Noto+Serif+KR:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="../js/hatvit-storage.js" defer></script>
+  <script src="../js/main.js" defer></script>
+  <script src="../js/nav-session.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-backdrop" aria-hidden="true"></div>
+    <div class="site-header__inner">
+      <a class="logo" href="../home.html">HATVIT</a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="메뉴 열기">
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+      </button>
+      <nav id="site-nav" class="nav-panel" aria-label="주 메뉴">
+        <ul class="nav-main">
+          <li><a href="../home.html">홈</a></li>
+          <li class="nav-main__group">
+            <span class="nav-submenu__label">병원소개</span>
+            <ul class="nav-submenu" role="list">
+              <li><a href="about.html">병원 소개</a></li>
+              <li><a href="staff.html">의료진 소개</a></li>
+            </ul>
+          </li>
+<li><a href="obstetrics.html">산과</a></li>
+          <li><a href="gynecology.html">부인과</a></li>
+          <li><a href="pediatrics.html">소아청소년과</a></li>
+          <li><a href="internal.html">내과</a></li>
+          <li><a href="checkup.html">건강검진센터</a></li>
+          <li><a href="culture.html">문화센터</a></li>
+          <li><a href="guide.html" aria-current="page">진료안내</a></li>
+          <li class="nav-main__group">
+            <span class="nav-submenu__label">상담</span>
+            <ul class="nav-submenu" role="list">
+              <li><a href="qa.html">Q&amp;A</a></li>
+              <li><a href="board.html">상담게시판</a></li>
+              <li><a href="reservation.html">실시간 예약</a></li>
+            </ul>
+          </li>
+          <li><a href="login.html" id="nav-login-link">로그인</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-hero">
+    <h1>진료안내</h1>
+    <p>진료 시간, 예약 방법, 외래·입원·퇴원 절차, 오시는 길을 정리했습니다.</p>
+  </div>
+
+  <figure class="page-banner wrap">
+    <img src="../images/page-guide.png" width="1200" height="675" alt="병원 안내 데스크와 로비" loading="lazy" decoding="async" />
+  </figure>
+
+  <article class="article">
+    <div class="wrap">
+      <h2>예약 및 문의</h2>
+      <ul>
+        <li>산부인과 예약·상담: <strong>1811-6161</strong>, <strong>02-983-7771</strong></li>
+        <li>병동·응급(주말·야간): <strong>02-944-1350</strong></li>
+        <li>분만 및 응급: <strong>24시간</strong> 전문의 상주 (병원 안내 기준)</li>
+        <li>소아청소년과: <strong>02-944-1320</strong> (1324~5)</li>
+        <li>내과: <strong>02-944-1400</strong> (1403)</li>
+      </ul>
+      <p>진료 예약은 방문 또는 전화로 가능합니다. 예약 환자는 진료 시작 10분 전까지 1층 접수창구에 도착해 주세요. 분만·응급 시 일정이 지연될 수 있습니다.</p>
+
+      <h2>진료 시간 (요약)</h2>
+      <h3>산부인과</h3>
+      <ul>
+        <li>평일: 주간 09:00~18:00, 점심 13:00~14:00, 야간 18:00~19:00</li>
+        <li>토요일: 주간 08:30~14:30, 야간 14:30~15:00</li>
+        <li>일·공휴일: 주간 09:00~13:00 (병원 공지에 따름)</li>
+      </ul>
+      <h3>소아청소년과</h3>
+      <ul>
+        <li>평일: 09:00~18:00 (점심 13:00~14:00)</li>
+        <li>토요일: 08:00~14:30</li>
+        <li>일·공휴일: 휴진 (안내 변경 가능)</li>
+      </ul>
+      <h3>내과</h3>
+      <ul>
+        <li>월요일: 09:00~18:00</li>
+        <li>화·수·금: 08:00~17:00 (점심 13:00~14:00)</li>
+        <li>목·토: 08:00~12:00</li>
+        <li>일·공휴일: 휴진</li>
+      </ul>
+
+      <h2>외래 진료 절차</h2>
+      <ol>
+        <li><strong>접수</strong> — 1층 원무과(야간·휴일은 3층 등 병원 안내)</li>
+        <li><strong>진료</strong> — 혈압·체중 후 대기실에서 호명에 따라 이동</li>
+        <li><strong>수납</strong> — 처방전·다음 예약</li>
+        <li><strong>검사</strong> — 초음파, 유방촬영 등 안내에 따라 각 실시</li>
+      </ol>
+
+      <h2>입원 · 퇴원</h2>
+      <p>입원은 외래 주치의 결정 후 상담실 안내에 따릅니다. 퇴원 당일 원무과 수납 후 간호실·신생아실 절차를 진행합니다. 자연분만·제왕절개·부인과 수술별 <strong>입원 준비물</strong>은 병원 안내지를 참고하세요(속옷, 수유용품, 세면도구, 신생아 외출용 겉싸개 등).</p>
+
+      <h2>면회</h2>
+      <p>밤 10시 이후 면회 제한, 7세 미만 소아 동반 삼가 등 감염 관련 안내가 있을 수 있습니다. 코로나19 등 유행 시 방문 제한이 적용될 수 있으니 내원 전 확인 바랍니다.</p>
+
+      <h2>찾아오시는 길</h2>
+      <p><strong>주소:</strong> 서울특별시 강북구 도봉로 74</p>
+      <ul>
+        <li><strong>지하철:</strong> 4호선 미아사거리역 1번 출구, 수유 방향 약 260m</li>
+        <li><strong>버스:</strong> 간선 N15, N16, 101, 102, 107, 120, 130, 140, 141, 142, 148, 150, 151, 153, 160, 710 등 — 롯데백화점 미아 또는 미아사거리역 하차</li>
+        <li><strong>주차:</strong> 지하주차장 B1~B5, 삼양입구 사거리 인근 제휴 주차 안내 가능</li>
+      </ul>
+
+      <figure class="article-figure" style="margin:32px 0;">
+        <img src="../images/page-guide.png" width="900" height="520" alt="동선·안내 공간" loading="lazy" decoding="async" style="object-position: center 45%;" />
+      </figure>
+
+      <h2>제증명 · 서식</h2>
+      <p>진단서·진료확인서 등은 담당의 진료 시간에 신청합니다. 본인 신분증 지참, 대리인 시 동의서·위임장 등 구비서류는 병원 지침을 따릅니다. 국민행복카드 임신확인서 등은 원무과에 문의하세요.</p>
+
+      <div class="contact-bar">
+        <div><strong>통합 예약</strong> 1811-6161</div>
+        <div><a href="../home.html">홈으로</a></div>
+      </div>
+    </div>
+  </article>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div><div class="site-footer__brand">햇빛병원</div><p>서울특별시 강북구 도봉로 74</p></div>
+      <div><ul style="list-style:none;padding:0;"><li><a href="about.html">병원소개</a></li></ul></div>
+      <div><ul style="list-style:none;padding:0;"><li><a href="../home.html">홈</a></li></ul></div>
+    </div>
+    <p class="site-footer__copy">© Hatvit style demo · 비급여 가격 등 세부는 공식 사이트 확인</p>
+  </footer>
+  <script src="../js/config.js"></script>
+  <script src="../js/floating-bar.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>햇빛병원 그룹 — 사이트 선택</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600&family=Noto+Serif+KR:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/hub.css" />
+  <script src="js/hub.js" defer></script>
+</head>
+<body class="hub-page">
+  <div class="hub-bg" aria-hidden="true">
+    <div class="hub-bg__perspective">
+      <div class="hub-bg__tilt" id="hub-bg-tilt">
+        <div class="hub-bg__layer hub-bg__layer--far"></div>
+        <div class="hub-bg__layer hub-bg__layer--mid" aria-hidden="true"></div>
+        <div class="hub-bg__layer hub-bg__layer--near"></div>
+      </div>
+    </div>
+    <div class="hub-bg__scrim"></div>
+  </div>
+  <div class="hub-noise" aria-hidden="true"></div>
+
+  <div class="hub-gate" id="hub-gate">
+    <nav class="hub-scene" aria-label="사이트 분기">
+      <a
+        class="hub-zone hub-zone--left"
+        href="home.html"
+        data-hub-side="left"
+      >
+        <span class="hub-zone__label">Medical Clinic</span>
+        <span class="hub-zone__sub" lang="ko">햇빛병원</span>
+      </a>
+
+      <div class="hub-ornament" aria-hidden="true">
+        <svg
+          class="hub-ornament__svg"
+          viewBox="0 0 800 360"
+          width="100%"
+          height="100%"
+          preserveAspectRatio="xMidYMid meet"
+          focusable="false"
+        >
+          <defs>
+            <filter id="hub-glow" x="-50%" y="-50%" width="200%" height="200%">
+              <feGaussianBlur stdDeviation="2" result="b" />
+              <feMerge>
+                <feMergeNode in="b" />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
+          </defs>
+
+          <!-- 좌우 가이드 라인 + 화살 -->
+          <g class="hub-lines" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <line
+              class="hub-line hub-line--left"
+              x1="400"
+              y1="180"
+              x2="118"
+              y2="180"
+              stroke="rgba(255,255,255,0.55)"
+              stroke-width="1.25"
+            />
+            <polygon
+              class="hub-arrow hub-arrow--left"
+              points="108,180 118,175 118,185"
+              fill="rgba(255,255,255,0.7)"
+              stroke="none"
+            />
+            <line
+              class="hub-line hub-line--right"
+              x1="400"
+              y1="180"
+              x2="682"
+              y2="180"
+              stroke="rgba(255,255,255,0.55)"
+              stroke-width="1.25"
+            />
+            <polygon
+              class="hub-arrow hub-arrow--right"
+              points="692,180 682,175 682,185"
+              fill="rgba(255,255,255,0.7)"
+              stroke="none"
+            />
+          </g>
+
+          <!-- 중앙 V(>) 클러스터 — 좌/우 그룹으로 나눠 호버 시 펄스 -->
+          <g
+            class="hub-chev hub-chev--cluster"
+            fill="none"
+            stroke="rgba(255,255,255,0.78)"
+            stroke-width="1.15"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <g class="hub-chev--L">
+              <g transform="translate(338,180) rotate(-8)"><polyline points="-5,-3 0,4 5,-3" /></g>
+              <g transform="translate(352,168) rotate(12)"><polyline points="-5,-3 0,4 5,-3" /></g>
+              <g transform="translate(348,192) rotate(-22)"><polyline points="-5,-3 0,4 5,-3" /></g>
+              <g transform="translate(362,178) rotate(4)"><polyline points="-5,-3 0,4 5,-3" /></g>
+              <g transform="translate(356,200) rotate(-35)"><polyline points="-5,-3 0,4 5,-3" /></g>
+              <g transform="translate(368,165) rotate(18)"><polyline points="-5,-3 0,4 5,-3" /></g>
+              <g transform="translate(372,188) rotate(-5)"><polyline points="-5,-3 0,4 5,-3" /></g>
+              <g transform="translate(364,205) rotate(-40)"><polyline points="-5,-3 0,4 5,-3" /></g>
+              <g transform="translate(378,172) rotate(25)"><polyline points="-5,-3 0,4 5,-3" /></g>
+              <g transform="translate(385,195) rotate(-12)"><polyline points="-5,-3 0,4 5,-3" /></g>
+              <g transform="translate(375,158) rotate(30)"><polyline points="-5,-3 0,4 5,-3" /></g>
+              <g transform="translate(388,182) rotate(6)"><polyline points="-5,-3 0,4 5,-3" /></g>
+            </g>
+            <g class="hub-chev--R">
+              <g transform="translate(462,180) rotate(8)"><polyline points="-5,-3 0,4 5,-3" /></g>
+              <g transform="translate(448,168) rotate(-12)"><polyline points="-5,-3 0,4 5,-3" /></g>
+              <g transform="translate(452,192) rotate(22)"><polyline points="-5,-3 0,4 5,-3" /></g>
+              <g transform="translate(438,178) rotate(-4)"><polyline points="-5,-3 0,4 5,-3" /></g>
+              <g transform="translate(444,200) rotate(35)"><polyline points="-5,-3 0,4 5,-3" /></g>
+              <g transform="translate(432,165) rotate(-18)"><polyline points="-5,-3 0,4 5,-3" /></g>
+              <g transform="translate(428,188) rotate(5)"><polyline points="-5,-3 0,4 5,-3" /></g>
+              <g transform="translate(436,205) rotate(40)"><polyline points="-5,-3 0,4 5,-3" /></g>
+              <g transform="translate(422,172) rotate(-25)"><polyline points="-5,-3 0,4 5,-3" /></g>
+              <g transform="translate(415,195) rotate(12)"><polyline points="-5,-3 0,4 5,-3" /></g>
+              <g transform="translate(425,158) rotate(-30)"><polyline points="-5,-3 0,4 5,-3" /></g>
+              <g transform="translate(412,182) rotate(-6)"><polyline points="-5,-3 0,4 5,-3" /></g>
+            </g>
+            <g class="hub-chev--C">
+              <g transform="translate(400,168) rotate(0)"><polyline points="-4,-2.5 0,3 4,-2.5" /></g>
+              <g transform="translate(396,180) rotate(-15)"><polyline points="-4,-2.5 0,3 4,-2.5" /></g>
+              <g transform="translate(404,180) rotate(15)"><polyline points="-4,-2.5 0,3 4,-2.5" /></g>
+              <g transform="translate(400,192) rotate(0)"><polyline points="-4,-2.5 0,3 4,-2.5" /></g>
+            </g>
+          </g>
+        </svg>
+      </div>
+
+      <a
+        class="hub-zone hub-zone--right"
+        href="pages/postpartum-care.html"
+        data-hub-side="right"
+      >
+        <span class="hub-zone__label">Postnatal Care</span>
+        <span class="hub-zone__sub" lang="ko">햇빛산후조리원</span>
+      </a>
+    </nav>
+
+    <p class="hub-hint">마우스를 움직이면 배경이 입체적으로 회전합니다 · 중앙 그래픽은 각 영역에 올리면 강조됩니다</p>
+  </div>
+</body>
+</html>
